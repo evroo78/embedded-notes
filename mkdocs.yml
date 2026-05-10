@@ -1,5 +1,7 @@
 site_name: Embedded Notes
 
+site_url: https://evroo78.github.io/embedded-notes/
+
 theme:
   name: material
   highlightjs: true

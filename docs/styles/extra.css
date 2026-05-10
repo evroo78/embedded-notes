@@ -1,0 +1,43 @@
+/* ====== ФОН СТОРІНКИ ====== */
+body {
+  background-color: #f5f7fb;
+}
+
+/* ====== ОСНОВНИЙ КОНТЕНТ ЯК КАРТКА ====== */
+.md-content__inner {
+  background: white;
+  padding: 32px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  margin-top: 16px;
+}
+
+/* ====== РОЗДІЛЕННЯ NAV І CONTENT ====== */
+.md-sidebar--primary {
+  border-right: 1px solid #e5e7eb;
+}
+
+/* додаємо трохи “повітря” біля навігації */
+.md-sidebar__scrollwrap {
+  padding-right: 8px;
+}
+
+/* ====== ЗАГОЛОВКИ ТРОХИ ЧИСТІШІ ====== */
+.md-typeset h1 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+/* ====== БЛОКИ КОДУ (embedded-friendly) ====== */
+.md-typeset pre {
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+/* кнопка copy (якщо увімкнений pymdownx) */
+.md-clipboard {
+  opacity: 0.6;
+}
+.md-clipboard:hover {
+  opacity: 1;
+}

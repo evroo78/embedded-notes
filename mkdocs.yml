@@ -39,7 +39,7 @@ nav:
   - Home: index.md
   - Основи електроніки:
       - Overview: electronics/index.md
-      - Як обійтися без пайки?: electronics/bradboard.md
+      - Як обійтися без пайки?: electronics/breadboard.md
   - Arduino:
       - Overview: arduino/index.md
       - About board: arduino/theory-arduino-uno.md

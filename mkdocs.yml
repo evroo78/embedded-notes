@@ -40,9 +40,11 @@ nav:
   - Основи електроніки:
       - Overview: electronics/index.md
       - Як обійтися без пайки?: electronics/breadboard.md
+      - Закон Ома: electronics/ohms-law.md
+      - Світлодіоди: electronics/lesd.md
   - Arduino:
       - Overview: arduino/index.md
-      - About board: arduino/theory-arduino-uno.md
+      - Про плату Arduino UNO та її піни: arduino/theory-arduino-uno.md
   - STM32:
       - Overview: stm32/index.md
       - GPIO: stm32/gpio.md

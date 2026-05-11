@@ -9,7 +9,7 @@
 ## ⚡ Arduino
 Швидкі прототипи
 
-→ [Перейти до Arduino](Arduino/index.md)
+→ [Перейти до Arduino](arduino/index.md)
 
 ---
 
@@ -17,4 +17,3 @@
 Професійна робота з мікроконтролерами ST
 
 → [Перейти до STM32](stm32/index.md)
-

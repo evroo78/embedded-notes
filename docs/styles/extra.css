@@ -41,3 +41,58 @@ body {
 .md-clipboard:hover {
   opacity: 1;
 }
+
+/* форматування рисунків і підписів */
+figure {
+  counter-increment: figure;
+  text-align: center;
+  margin: 20px 0;
+}
+
+figcaption {
+  font-size: 0.9em;
+  color: #222;
+}
+
+figcaption::before {
+  content: "Рисунок " counter(figure) " — ";
+  /* font-weight: bold; */
+}
+
+/* форматування таблиць */
+
+.table-caption {
+  counter-increment: table-counter;
+  text-align: right;
+  font-size: 0.9em;
+  color: #222;
+  margin-bottom: -10px;
+}
+
+.table-caption::before {
+  content: "Таблиця " counter(table-counter) " — ";
+  /* font-weight: bold; */
+}
+
+/* форматування словника */
+
+dl {
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 10px 14px;
+  background: #fff;
+}
+
+dt {
+  font-family: monospace;
+  font-weight: 700;
+  color: #2e7d32;
+  margin-top: 10px;
+}
+
+dd {
+  margin-left: 0;
+  padding-left: 10px;
+  border-left: 2px solid #c8e6c9;
+  color: #424242;
+}

@@ -2,7 +2,10 @@ site_name: Embedded Notes
 
 site_url: https://evroo78.github.io/embedded-notes/
 
+docs_dir: docs
+
 theme:
+  # name: mkdocs
   name: material
   highlightjs: true
   features:
@@ -13,25 +16,36 @@ extra_css:
   - styles/extra.css
 
 markdown_extensions:
-  - codehilite
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.highlight:
-      anchor_linenums: true
-      pygments_lang_class: true
-  - pymdownx.snippets
+  - attr_list
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+  - abbr
+  - def_list
 
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 nav:
   - Home: index.md
+  - Основи електроніки:
+      - Overview: electronics/index.md
+      - Як обійтися без пайки?: electronics/bradboard.md
+  - Arduino:
+      - Overview: arduino/index.md
+      - About board: arduino/theory-arduino-uno.md
   - STM32:
       - Overview: stm32/index.md
       - GPIO: stm32/gpio.md
-  - Arduino:
-      - Overview: Arduino/index.md
-      - About board: theory-arduino-uno.md
 
 copyright: >
   © 2026 Hanna Shevliakova — Embedded Notes
